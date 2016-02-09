@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--My Casts View Controller-->
         <scene sceneID="ibt-DK-TKU">
             <objects>
-                <viewController storyboardIdentifier="myCasts" id="NY1-yc-O4X" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myCasts" id="NY1-yc-O4X" customClass="MyCastsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MYf-KV-TKI"/>
                         <viewControllerLayoutGuide type="bottom" id="gyT-UT-MsM"/>
@@ -20,6 +20,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2o-mV-Rec">
                                 <rect key="frame" x="277" y="285" width="46" height="30"/>
                                 <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="exitMyCasts:" destination="NY1-yc-O4X" eventType="touchUpInside" id="qWP-HC-aDY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
