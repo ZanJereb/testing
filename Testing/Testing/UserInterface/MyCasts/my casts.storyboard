@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--My Casts View Controller-->
@@ -14,28 +15,61 @@
                         <viewControllerLayoutGuide type="bottom" id="gyT-UT-MsM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="r8H-Ay-qPa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2o-mV-Rec">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Exit"/>
-                                <connections>
-                                    <action selector="exitMyCasts:" destination="NY1-yc-O4X" eventType="touchUpInside" id="qWP-HC-aDY"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBM-f6-sKg" userLabel="Header">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2o-mV-Rec">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Gll-yg-ddz"/>
+                                            <constraint firstAttribute="height" constant="50" id="TZ9-Sm-t85"/>
+                                        </constraints>
+                                        <state key="normal" title="Exit"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="TZ9-Sm-t85"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="exitMyCasts:" destination="NY1-yc-O4X" eventType="touchUpInside" id="qWP-HC-aDY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="H7C-kn-KtN"/>
+                                    <constraint firstItem="j2o-mV-Rec" firstAttribute="top" secondItem="CBM-f6-sKg" secondAttribute="top" id="Nhu-hw-ZPv"/>
+                                    <constraint firstAttribute="bottom" secondItem="j2o-mV-Rec" secondAttribute="bottom" id="bYR-w8-GiD"/>
+                                    <constraint firstItem="j2o-mV-Rec" firstAttribute="leading" secondItem="CBM-f6-sKg" secondAttribute="leading" id="gvX-tm-SjW"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MH3-C8-6vF">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="j2o-mV-Rec" firstAttribute="centerY" secondItem="r8H-Ay-qPa" secondAttribute="centerY" id="6e3-Uy-FX2"/>
-                            <constraint firstItem="j2o-mV-Rec" firstAttribute="centerX" secondItem="r8H-Ay-qPa" secondAttribute="centerX" id="KWl-Nk-26u"/>
-                            <constraint firstItem="j2o-mV-Rec" firstAttribute="centerX" secondItem="r8H-Ay-qPa" secondAttribute="centerX" id="PHx-X5-hOE"/>
+                            <constraint firstItem="MH3-C8-6vF" firstAttribute="leading" secondItem="r8H-Ay-qPa" secondAttribute="leading" id="4Xa-5r-n2b"/>
+                            <constraint firstAttribute="trailing" secondItem="CBM-f6-sKg" secondAttribute="trailing" id="GFL-IL-fRU"/>
+                            <constraint firstItem="CBM-f6-sKg" firstAttribute="leading" secondItem="r8H-Ay-qPa" secondAttribute="leading" id="PV2-pF-hTf"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="MH3-C8-6vF" secondAttribute="bottom" id="X0Y-Gf-JH2"/>
+                            <constraint firstItem="CBM-f6-sKg" firstAttribute="top" secondItem="MYf-KV-TKI" secondAttribute="bottom" id="azX-41-teM"/>
+                            <constraint firstItem="MH3-C8-6vF" firstAttribute="top" secondItem="CBM-f6-sKg" secondAttribute="bottom" id="dwj-z8-9gY"/>
+                            <constraint firstAttribute="trailing" secondItem="MH3-C8-6vF" secondAttribute="trailing" id="nqI-lE-TDB"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="MH3-C8-6vF" id="mQJ-zx-eJh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvj-15-JQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="450"/>
+            <point key="canvasLocation" x="244.5" y="449.5"/>
         </scene>
     </scenes>
 </document>
