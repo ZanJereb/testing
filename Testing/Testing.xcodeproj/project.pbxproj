@@ -13,6 +13,7 @@
 		2D8AEEB31C6A092300424D4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8AEEB11C6A092300424D4F /* LaunchScreen.storyboard */; };
 		2D8AEEC11C6A0E7C00424D4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8AEEBE1C6A0E7C00424D4F /* AppDelegate.m */; };
 		2D8AEEC21C6A0E7C00424D4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8AEEC01C6A0E7C00424D4F /* ViewController.m */; };
+		2D8AEEC61C6A11C600424D4F /* my casts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8AEEC51C6A11C600424D4F /* my casts.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2D8AEEBE1C6A0E7C00424D4F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2D8AEEBF1C6A0E7C00424D4F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2D8AEEC01C6A0E7C00424D4F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2D8AEEC51C6A11C600424D4F /* my casts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "my casts.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		2D8AEEA21C6A092300424D4F /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				2D8AEEC31C6A114600424D4F /* UserInterface */,
 				2D8AEEBC1C6A0E7C00424D4F /* sources */,
 				2D8AEEAC1C6A092300424D4F /* Main.storyboard */,
 				2D8AEEAF1C6A092300424D4F /* Assets.xcassets */,
@@ -86,6 +89,22 @@
 				2D8AEEC01C6A0E7C00424D4F /* ViewController.m */,
 			);
 			path = sources;
+			sourceTree = "<group>";
+		};
+		2D8AEEC31C6A114600424D4F /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				2D8AEEC41C6A114600424D4F /* MyCasts */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		2D8AEEC41C6A114600424D4F /* MyCasts */ = {
+			isa = PBXGroup;
+			children = (
+				2D8AEEC51C6A11C600424D4F /* my casts.storyboard */,
+			);
+			path = MyCasts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +166,7 @@
 			files = (
 				2D8AEEB31C6A092300424D4F /* LaunchScreen.storyboard in Resources */,
 				2D8AEEB01C6A092300424D4F /* Assets.xcassets in Resources */,
+				2D8AEEC61C6A11C600424D4F /* my casts.storyboard in Resources */,
 				2D8AEEAE1C6A092300424D4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

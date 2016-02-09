@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ibt-DK-TKU">
+            <objects>
+                <viewController storyboardIdentifier="myCasts" id="NY1-yc-O4X" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MYf-KV-TKI"/>
+                        <viewControllerLayoutGuide type="bottom" id="gyT-UT-MsM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r8H-Ay-qPa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2o-mV-Rec">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Exit"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j2o-mV-Rec" firstAttribute="centerY" secondItem="r8H-Ay-qPa" secondAttribute="centerY" id="6e3-Uy-FX2"/>
+                            <constraint firstItem="j2o-mV-Rec" firstAttribute="centerX" secondItem="r8H-Ay-qPa" secondAttribute="centerX" id="KWl-Nk-26u"/>
+                            <constraint firstItem="j2o-mV-Rec" firstAttribute="centerX" secondItem="r8H-Ay-qPa" secondAttribute="centerX" id="PHx-X5-hOE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yvj-15-JQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="450"/>
+        </scene>
+    </scenes>
+</document>
