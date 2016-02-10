@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D75A6F11C6B7892009665DF /* MyCastTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D75A6F01C6B7892009665DF /* MyCastTableViewCell.m */; };
+		2D75A6F91C6B7AA9009665DF /* my casts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D75A6F41C6B7AA9009665DF /* my casts.storyboard */; };
+		2D75A6FA1C6B7AA9009665DF /* MyCastsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D75A6F61C6B7AA9009665DF /* MyCastsViewController.m */; };
+		2D75A6FB1C6B7AA9009665DF /* MyCastTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D75A6F81C6B7AA9009665DF /* MyCastTableViewCell.m */; };
+		2D75A6FF1C6B7AEC009665DF /* Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D75A6FE1C6B7AEC009665DF /* Cast.m */; };
 		2D8AEEA51C6A092300424D4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8AEEA41C6A092300424D4F /* main.m */; };
 		2D8AEEAE1C6A092300424D4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8AEEAC1C6A092300424D4F /* Main.storyboard */; };
 		2D8AEEB01C6A092300424D4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8AEEAF1C6A092300424D4F /* Assets.xcassets */; };
 		2D8AEEB31C6A092300424D4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8AEEB11C6A092300424D4F /* LaunchScreen.storyboard */; };
 		2D8AEEC11C6A0E7C00424D4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8AEEBE1C6A0E7C00424D4F /* AppDelegate.m */; };
 		2D8AEEC21C6A0E7C00424D4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8AEEC01C6A0E7C00424D4F /* ViewController.m */; };
-		2D8AEEC61C6A11C600424D4F /* my casts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8AEEC51C6A11C600424D4F /* my casts.storyboard */; };
-		2D8AEEC91C6A139C00424D4F /* MyCastsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8AEEC81C6A139C00424D4F /* MyCastsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D75A6EF1C6B7892009665DF /* MyCastTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCastTableViewCell.h; sourceTree = "<group>"; };
-		2D75A6F01C6B7892009665DF /* MyCastTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCastTableViewCell.m; sourceTree = "<group>"; };
+		2D75A6F41C6B7AA9009665DF /* my casts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "my casts.storyboard"; sourceTree = "<group>"; };
+		2D75A6F51C6B7AA9009665DF /* MyCastsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCastsViewController.h; sourceTree = "<group>"; };
+		2D75A6F61C6B7AA9009665DF /* MyCastsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCastsViewController.m; sourceTree = "<group>"; };
+		2D75A6F71C6B7AA9009665DF /* MyCastTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCastTableViewCell.h; sourceTree = "<group>"; };
+		2D75A6F81C6B7AA9009665DF /* MyCastTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCastTableViewCell.m; sourceTree = "<group>"; };
+		2D75A6FD1C6B7AEC009665DF /* Cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cast.h; sourceTree = "<group>"; };
+		2D75A6FE1C6B7AEC009665DF /* Cast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cast.m; sourceTree = "<group>"; };
 		2D8AEEA01C6A092300424D4F /* Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8AEEA41C6A092300424D4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D8AEEAD1C6A092300424D4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,9 +37,6 @@
 		2D8AEEBE1C6A0E7C00424D4F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2D8AEEBF1C6A0E7C00424D4F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2D8AEEC01C6A0E7C00424D4F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2D8AEEC51C6A11C600424D4F /* my casts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "my casts.storyboard"; sourceTree = "<group>"; };
-		2D8AEEC71C6A139C00424D4F /* MyCastsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCastsViewController.h; sourceTree = "<group>"; };
-		2D8AEEC81C6A139C00424D4F /* MyCastsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCastsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D75A6F21C6B7AA9009665DF /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				2D75A6F31C6B7AA9009665DF /* MyCasts */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		2D75A6F31C6B7AA9009665DF /* MyCasts */ = {
+			isa = PBXGroup;
+			children = (
+				2D75A6F41C6B7AA9009665DF /* my casts.storyboard */,
+				2D75A6F51C6B7AA9009665DF /* MyCastsViewController.h */,
+				2D75A6F61C6B7AA9009665DF /* MyCastsViewController.m */,
+				2D75A6F71C6B7AA9009665DF /* MyCastTableViewCell.h */,
+				2D75A6F81C6B7AA9009665DF /* MyCastTableViewCell.m */,
+			);
+			path = MyCasts;
+			sourceTree = "<group>";
+		};
+		2D75A6FC1C6B7AC0009665DF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2D75A6FD1C6B7AEC009665DF /* Cast.h */,
+				2D75A6FE1C6B7AEC009665DF /* Cast.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		2D8AEE971C6A092300424D4F = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +99,6 @@
 		2D8AEEA21C6A092300424D4F /* Testing */ = {
 			isa = PBXGroup;
 			children = (
-				2D8AEEC31C6A114600424D4F /* UserInterface */,
 				2D8AEEBC1C6A0E7C00424D4F /* sources */,
 				2D8AEEAC1C6A092300424D4F /* Main.storyboard */,
 				2D8AEEAF1C6A092300424D4F /* Assets.xcassets */,
@@ -89,32 +120,14 @@
 		2D8AEEBC1C6A0E7C00424D4F /* sources */ = {
 			isa = PBXGroup;
 			children = (
+				2D75A6FC1C6B7AC0009665DF /* Data */,
+				2D75A6F21C6B7AA9009665DF /* UserInterface */,
 				2D8AEEBD1C6A0E7C00424D4F /* AppDelegate.h */,
 				2D8AEEBE1C6A0E7C00424D4F /* AppDelegate.m */,
 				2D8AEEBF1C6A0E7C00424D4F /* ViewController.h */,
 				2D8AEEC01C6A0E7C00424D4F /* ViewController.m */,
 			);
 			path = sources;
-			sourceTree = "<group>";
-		};
-		2D8AEEC31C6A114600424D4F /* UserInterface */ = {
-			isa = PBXGroup;
-			children = (
-				2D8AEEC41C6A114600424D4F /* MyCasts */,
-			);
-			path = UserInterface;
-			sourceTree = "<group>";
-		};
-		2D8AEEC41C6A114600424D4F /* MyCasts */ = {
-			isa = PBXGroup;
-			children = (
-				2D8AEEC51C6A11C600424D4F /* my casts.storyboard */,
-				2D8AEEC71C6A139C00424D4F /* MyCastsViewController.h */,
-				2D8AEEC81C6A139C00424D4F /* MyCastsViewController.m */,
-				2D75A6EF1C6B7892009665DF /* MyCastTableViewCell.h */,
-				2D75A6F01C6B7892009665DF /* MyCastTableViewCell.m */,
-			);
-			path = MyCasts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +189,7 @@
 			files = (
 				2D8AEEB31C6A092300424D4F /* LaunchScreen.storyboard in Resources */,
 				2D8AEEB01C6A092300424D4F /* Assets.xcassets in Resources */,
-				2D8AEEC61C6A11C600424D4F /* my casts.storyboard in Resources */,
+				2D75A6F91C6B7AA9009665DF /* my casts.storyboard in Resources */,
 				2D8AEEAE1C6A092300424D4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,8 +202,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D8AEEC21C6A0E7C00424D4F /* ViewController.m in Sources */,
-				2D8AEEC91C6A139C00424D4F /* MyCastsViewController.m in Sources */,
-				2D75A6F11C6B7892009665DF /* MyCastTableViewCell.m in Sources */,
+				2D75A6FA1C6B7AA9009665DF /* MyCastsViewController.m in Sources */,
+				2D75A6FF1C6B7AEC009665DF /* Cast.m in Sources */,
+				2D75A6FB1C6B7AA9009665DF /* MyCastTableViewCell.m in Sources */,
 				2D8AEEC11C6A0E7C00424D4F /* AppDelegate.m in Sources */,
 				2D8AEEA51C6A092300424D4F /* main.m in Sources */,
 			);
