@@ -12,6 +12,8 @@
 
 @property(weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSArray *items;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+
 
 @end
 
@@ -31,12 +33,29 @@
     self.items=array;
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return  UIStatusBarStyleLightContent;
+}
+
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.height * 0.5f;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)exitMyCasts:(id)sender {
     [self dismissViewControllerAnimated:YES completion:Nil];
+}
+- (IBAction)optionsPressed:(id)sender
+{
+    static BOOL small = true;
+    [self.view layoutIfNeeded];
+    small = !small;
 }
 
 - (void)setItems:(NSArray *)items
@@ -53,7 +72,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [[UITableViewCell alloc] init];
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    cell.backgroundView.backgroundColor = [UIColor clearColor];
     cell.textLabel.text = self.items[indexPath.row];
+    cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
 }
 
