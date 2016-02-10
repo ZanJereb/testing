@@ -13,6 +13,10 @@
 @property(weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSArray *items;
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+@property (weak, nonatomic) IBOutlet UILabel *profileNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *locationNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *castCountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *channelCountLabel;
 
 
 @end
@@ -66,18 +70,31 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.items.count;
+    return self.items.count+1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    UITableViewCell *cell = nil;
+    
+    if (indexPath.row == 0)
+    {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"header" forIndexPath:indexPath];
+    }
+    else
+    {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"cast" forIndexPath:indexPath];
+    }
+    
+    
     cell.backgroundColor = [UIColor clearColor];
     cell.contentView.backgroundColor = [UIColor clearColor];
     cell.backgroundView.backgroundColor = [UIColor clearColor];
-    cell.textLabel.text = self.items[indexPath.row];
-    cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return indexPath.row == 0 ? 50.0f : 76.0f;
 }
 
 @end

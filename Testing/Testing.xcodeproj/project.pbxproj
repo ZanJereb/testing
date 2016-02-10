@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D75A6F11C6B7892009665DF /* MyCastTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D75A6F01C6B7892009665DF /* MyCastTableViewCell.m */; };
 		2D8AEEA51C6A092300424D4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8AEEA41C6A092300424D4F /* main.m */; };
 		2D8AEEAE1C6A092300424D4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8AEEAC1C6A092300424D4F /* Main.storyboard */; };
 		2D8AEEB01C6A092300424D4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8AEEAF1C6A092300424D4F /* Assets.xcassets */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D75A6EF1C6B7892009665DF /* MyCastTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCastTableViewCell.h; sourceTree = "<group>"; };
+		2D75A6F01C6B7892009665DF /* MyCastTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCastTableViewCell.m; sourceTree = "<group>"; };
 		2D8AEEA01C6A092300424D4F /* Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8AEEA41C6A092300424D4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D8AEEAD1C6A092300424D4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				2D8AEEC51C6A11C600424D4F /* my casts.storyboard */,
 				2D8AEEC71C6A139C00424D4F /* MyCastsViewController.h */,
 				2D8AEEC81C6A139C00424D4F /* MyCastsViewController.m */,
+				2D75A6EF1C6B7892009665DF /* MyCastTableViewCell.h */,
+				2D75A6F01C6B7892009665DF /* MyCastTableViewCell.m */,
 			);
 			path = MyCasts;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			files = (
 				2D8AEEC21C6A0E7C00424D4F /* ViewController.m in Sources */,
 				2D8AEEC91C6A139C00424D4F /* MyCastsViewController.m in Sources */,
+				2D75A6F11C6B7892009665DF /* MyCastTableViewCell.m in Sources */,
 				2D8AEEC11C6A0E7C00424D4F /* AppDelegate.m in Sources */,
 				2D8AEEA51C6A092300424D4F /* main.m in Sources */,
 			);
