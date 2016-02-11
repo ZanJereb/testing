@@ -56,10 +56,38 @@
     return formatter;
 }
 
+- (NSString *)timePost:(NSDate *)dateTime
+{
+    
+    NSString *days;
+    NSString *hours;
+    NSString *mins;
+    NSString *returnTime=@"";
+    NSTimeInterval time = [[NSDate date] timeIntervalSinceDate:dateTime];
+    
+    
+    int min = ((int)time/60)%60;
+    mins = [NSString stringWithFormat:@"%d min", min];
+    int hour = (((int)time/60)/60)%24;
+    hours = [NSString stringWithFormat:@"%d hours ", hour];
+    int day = (((int)time/60)/60)/24;
+    days = [NSString stringWithFormat:@"%d days ", day];
+    
+    if(day) returnTime = [returnTime stringByAppendingString:days];
+    if(hour) returnTime = [returnTime stringByAppendingString:hours];
+    if(min) returnTime = [returnTime stringByAppendingString:mins];
+    
+    return returnTime;
+}
+
+- (NSString *)timeStamp
+{
+    return [self timePost:self.dateCreated];
+}
+
 + (NSArray *)getAllCasts
 {
     NSMutableArray *array=[[NSMutableArray alloc] init];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     
     for(int i=0;i<10;i++)
     {

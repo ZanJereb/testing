@@ -29,6 +29,7 @@
     _cast=cast;
     self.currentLocationLabel.text = cast.location;
     self.quoteLabel.text = cast.title;
+    self.postTimeLabel.text = cast.timeStamp;
 }
 
 @end

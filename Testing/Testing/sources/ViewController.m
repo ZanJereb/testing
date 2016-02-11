@@ -29,7 +29,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [[OUTAPIManager sharedInstance] loginWithUserName:@"maticoblakltt2@gmail.com" password:@"maticdemo" callback:^(BOOL didLogin, NSError *error) {
+    [[OUTAPIManager sharedInstance] loginWithUserName:@"zan_jereb@hotmail.com" password:@"zan123456" callback:^(BOOL didLogin, NSError *error) {
         
         [[OUTAPIManager sharedInstance] performRequest:[OUTAPIRequest forEndpoint:EndpointPathMe ofType:APICallGet] withCallback:^(id responseObject, NSError *error, NSNumber *statusCode) {
             User *me = [[User alloc] initWithDescriptor:responseObject[@"item"]];

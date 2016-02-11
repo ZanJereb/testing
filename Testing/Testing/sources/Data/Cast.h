@@ -12,6 +12,7 @@
 
 @property (nonatomic, readonly) NSString *title;
 @property (nonatomic, readonly) NSString *location;
+@property (nonatomic, readonly) NSString *timeStamp;
 
 + (void)fetchAllCasts:(void (^)(NSArray *casts))callBack;
 - (instancetype)initWithDescriptor:(NSDictionary *)descriptor;
