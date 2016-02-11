@@ -69,9 +69,9 @@
 }
 - (IBAction)optionsPressed:(id)sender
 {
-    static BOOL small = true;
-    [self.view layoutIfNeeded];
-    small = !small;
+    UIViewController *controller = [[UIStoryboard storyboardWithName:@"my casts" bundle:nil] instantiateViewControllerWithIdentifier:@"add Cast"];
+    [self.navigationController pushViewController:controller animated:YES];
+    
 }
 
 - (void)setItems:(NSArray *)items
