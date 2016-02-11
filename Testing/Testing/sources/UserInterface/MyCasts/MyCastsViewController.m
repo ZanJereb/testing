@@ -38,6 +38,12 @@
     
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+}
+
 - (void)injectCasts:(NSArray *)casts
 {
     self.items = casts;

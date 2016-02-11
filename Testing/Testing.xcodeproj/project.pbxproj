@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D47AF0F1C6C9C4100C58D21 /* MyCastNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AF0E1C6C9C4100C58D21 /* MyCastNavigationViewController.m */; };
 		2D75A6F91C6B7AA9009665DF /* my casts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D75A6F41C6B7AA9009665DF /* my casts.storyboard */; };
 		2D75A6FA1C6B7AA9009665DF /* MyCastsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D75A6F61C6B7AA9009665DF /* MyCastsViewController.m */; };
 		2D75A6FB1C6B7AA9009665DF /* MyCastTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D75A6F81C6B7AA9009665DF /* MyCastTableViewCell.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D47AF0D1C6C9C4100C58D21 /* MyCastNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCastNavigationViewController.h; sourceTree = "<group>"; };
+		2D47AF0E1C6C9C4100C58D21 /* MyCastNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCastNavigationViewController.m; sourceTree = "<group>"; };
 		2D75A6F41C6B7AA9009665DF /* my casts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "my casts.storyboard"; sourceTree = "<group>"; };
 		2D75A6F51C6B7AA9009665DF /* MyCastsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCastsViewController.h; sourceTree = "<group>"; };
 		2D75A6F61C6B7AA9009665DF /* MyCastsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCastsViewController.m; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 				2D75A6F61C6B7AA9009665DF /* MyCastsViewController.m */,
 				2D75A6F71C6B7AA9009665DF /* MyCastTableViewCell.h */,
 				2D75A6F81C6B7AA9009665DF /* MyCastTableViewCell.m */,
+				2D47AF0D1C6C9C4100C58D21 /* MyCastNavigationViewController.h */,
+				2D47AF0E1C6C9C4100C58D21 /* MyCastNavigationViewController.m */,
 			);
 			path = MyCasts;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				2D75A6FF1C6B7AEC009665DF /* Cast.m in Sources */,
 				2D75A6FB1C6B7AA9009665DF /* MyCastTableViewCell.m in Sources */,
 				2D8AEEC11C6A0E7C00424D4F /* AppDelegate.m in Sources */,
+				2D47AF0F1C6C9C4100C58D21 /* MyCastNavigationViewController.m in Sources */,
 				2D8AEEA51C6A092300424D4F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,10 +9,11 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--My Cast Navigation View Controller-->
         <scene sceneID="92a-28-fx2">
             <objects>
-                <navigationController id="b3I-hj-BsN" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="myCastNavigaton" id="b3I-hj-BsN" customClass="MyCastNavigationViewController" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0XD-EG-Eoj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -653,6 +654,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Wyh-zo-BZ2"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="castCountLabel" destination="lIT-Mk-J7t" id="2YS-GI-JbI"/>
@@ -665,7 +667,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvj-15-JQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="602.5" y="412.5"/>
+            <point key="canvasLocation" x="599.5" y="388.5"/>
         </scene>
     </scenes>
     <resources>
