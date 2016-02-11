@@ -26,6 +26,24 @@
             </objects>
             <point key="canvasLocation" x="-4" y="379"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="xjF-KP-DGe">
+            <objects>
+                <viewController storyboardIdentifier="myCastSecondViewController" id="9qC-Vs-WCV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jbt-E6-d5O"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ej-oV-9BN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P8X-fp-vdQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BGe-WU-Hga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="379"/>
+        </scene>
         <!--My Casts View Controller-->
         <scene sceneID="ibt-DK-TKU">
             <objects>
@@ -76,7 +94,7 @@
                                             <constraint firstAttribute="height" constant="50" id="dFu-Rt-3lx"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="xI8-ox-sgv"/>
                                         </constraints>
-                                        <state key="normal" image="mycastscreen-optionsicon"/>
+                                        <state key="normal" title="Add"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="dFu-Rt-3lx"/>
@@ -677,7 +695,6 @@
         <image name="mycastscreen-friendProfileImage" width="88" height="63"/>
         <image name="mycastscreen-infoImage" width="11" height="21"/>
         <image name="mycastscreen-locationIcon" width="8" height="12"/>
-        <image name="mycastscreen-optionsicon" width="33" height="33"/>
         <image name="mycastscreen-timeIcon" width="11" height="11"/>
         <image name="mycastsscreen-backicon" width="35" height="25"/>
     </resources>
