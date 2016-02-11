@@ -8,6 +8,7 @@
 
 #import "MyCastTableViewCell.h"
 #import "Cast.h"
+#import "ImageTools.h"
 
 @interface MyCastTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *tumbNailImageView;
@@ -30,6 +31,10 @@
     self.currentLocationLabel.text = cast.location;
     self.quoteLabel.text = cast.title;
     self.postTimeLabel.text = cast.timeStamp;
+    self.tumbNailImageView.image = nil;
+    [cast fetchThumbnail:^(UIImage *image) {
+        self.tumbNailImageView.image = image;
+    }];
 }
 
 @end

@@ -8,11 +8,14 @@
 
 #import "Cast.h"
 #import "OUTAPIManager.h"
+#import "ImageTools.h"
 @interface Cast ()
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *imageURL;
 @property (nonatomic, strong) NSString *location;
 @property (nonatomic, strong) NSDate *dateCreated;
+
+@property (nonatomic, strong) UIImage *image;
 
 @end
 
@@ -31,6 +34,21 @@
         
         callBack(casts);
     }];
+}
+
+- (void)fetchThumbnail:(void (^)(UIImage *image))callBack
+{
+    if(self.image == nil)
+    {
+        [ImageTools fetchImageWithURL:self.imageURL callback:^(UIImage *image) {
+            self.image = image;
+            callBack(image);
+        }];
+    }
+    else
+    {
+        callBack(self.image);
+    }
 }
 
 - (instancetype)initWithDescriptor:(NSDictionary *)descriptor

@@ -24,6 +24,7 @@
 		2D8AEEC21C6A0E7C00424D4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8AEEC01C6A0E7C00424D4F /* ViewController.m */; };
 		2D9A51CE1C6CB174002FBA2C /* AddCastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A51CD1C6CB174002FBA2C /* AddCastViewController.m */; };
 		2D9A51D11C6CB3BD002FBA2C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A51D01C6CB3BD002FBA2C /* User.m */; };
+		2DCE81721C6CDA1C005E35F9 /* ImageTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE81711C6CDA1C005E35F9 /* ImageTools.m */; };
 		6AB5AB33F7A5CFEC94BC639E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBDE76345EDDE61C8403D3D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		2D9A51CD1C6CB174002FBA2C /* AddCastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCastViewController.m; sourceTree = "<group>"; };
 		2D9A51CF1C6CB3BD002FBA2C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		2D9A51D01C6CB3BD002FBA2C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		2DCE81701C6CDA1C005E35F9 /* ImageTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTools.h; sourceTree = "<group>"; };
+		2DCE81711C6CDA1C005E35F9 /* ImageTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTools.m; sourceTree = "<group>"; };
 		7EBDE76345EDDE61C8403D3D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A750191487AAFBC3B3EE96C7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D46D09807723C005CABFF2FF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				2196D5871C6CA7A000130095 /* DLB */,
+				2DCE81701C6CDA1C005E35F9 /* ImageTools.h */,
+				2DCE81711C6CDA1C005E35F9 /* ImageTools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 				2D75A6FB1C6B7AA9009665DF /* MyCastTableViewCell.m in Sources */,
 				2D8AEEC11C6A0E7C00424D4F /* AppDelegate.m in Sources */,
 				2D9A51CE1C6CB174002FBA2C /* AddCastViewController.m in Sources */,
+				2DCE81721C6CDA1C005E35F9 /* ImageTools.m in Sources */,
 				2196D5851C6CA6E100130095 /* OUTSessionManager.m in Sources */,
 				2D47AF0F1C6C9C4100C58D21 /* MyCastNavigationViewController.m in Sources */,
 				2196D5841C6CA6E100130095 /* OUTAPIRequest.m in Sources */,
