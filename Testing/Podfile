@@ -1,0 +1,11 @@
+platform :ios, '7.0'
+
+inhibit_all_warnings!
+
+link_with 'Testing'
+
+# Add Application pods here
+
+pod 'AFNetworking', '~> 2.5.3'
+pod 'AFNetworking-RACExtensions'
+pod 'DOSingleton'
