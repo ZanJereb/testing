@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Cast;
 
 @interface MyCastTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) Cast *cast;
 
 @end

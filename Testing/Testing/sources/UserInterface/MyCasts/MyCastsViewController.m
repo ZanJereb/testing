@@ -7,6 +7,8 @@
 //
 
 #import "MyCastsViewController.h"
+#import "MyCastTableViewCell.h"
+#import "Cast.h"
 
 @interface MyCastsViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -19,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *channelCountLabel;
 
 
+
 @end
 
 @implementation MyCastsViewController
@@ -29,12 +32,15 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    NSMutableArray *array=[[NSMutableArray alloc] init];
-    for(int i=0;i<10;i++)
-        {
-            [array addObject:[NSString stringWithFormat:@"Item: %d", i+1]];
-        }
-    self.items=array;
+    [Cast fetchAllCasts:^(NSArray *casts) {
+        [self injectCasts:casts];
+    }];
+    
+}
+
+- (void)injectCasts:(NSArray *)casts
+{
+    self.items = casts;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
@@ -83,7 +89,10 @@
     }
     else
     {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"cast" forIndexPath:indexPath];
+        MyCastTableViewCell *castCell = [tableView dequeueReusableCellWithIdentifier:@"cast" forIndexPath:indexPath];
+        castCell.cast = self.items[indexPath.row-1];
+        cell = castCell;
+        
     }
     
     

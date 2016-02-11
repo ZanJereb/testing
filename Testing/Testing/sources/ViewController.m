@@ -19,10 +19,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
-- (IBAction)buttonMethod:(id)sender {
-    UIViewController *controller = [[UIStoryboard storyboardWithName:@"my casts" bundle:nil] instantiateViewControllerWithIdentifier:@"myCasts"];
-    [self presentViewController:controller animated:YES completion:nil];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

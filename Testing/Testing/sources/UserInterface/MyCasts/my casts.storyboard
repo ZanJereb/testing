@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBM-f6-sKg" userLabel="Header">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CBM-f6-sKg" userLabel="Header">
                                 <rect key="frame" x="0.0" y="20" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2o-mV-Rec">
@@ -90,7 +90,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YF-2p-POy" userLabel="ProfileView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1YF-2p-POy" userLabel="ProfileView">
                                 <rect key="frame" x="0.0" y="70" width="375" height="200"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ea-DH-5yu" userLabel="WhiteView">
@@ -238,10 +238,10 @@
                                                     <mask key="constraints">
                                                         <exclude reference="Ewa-Gb-nIs"/>
                                                         <exclude reference="Fyo-4c-pld"/>
-                                                        <exclude reference="euZ-6M-8RQ"/>
                                                         <exclude reference="meo-9o-C55"/>
                                                         <exclude reference="r8d-Sl-SfT"/>
                                                         <exclude reference="5fb-ab-SF3"/>
+                                                        <exclude reference="euZ-6M-8RQ"/>
                                                     </mask>
                                                 </variation>
                                             </view>
@@ -269,10 +269,10 @@
                                             <mask key="constraints">
                                                 <exclude reference="6bF-Y3-Q2N"/>
                                                 <exclude reference="zvP-Vc-jMR"/>
+                                                <exclude reference="NJg-te-myo"/>
                                                 <exclude reference="KTz-As-8Vl"/>
                                                 <exclude reference="WXk-kb-3xA"/>
                                                 <exclude reference="Z1H-db-u3E"/>
-                                                <exclude reference="NJg-te-myo"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -316,7 +316,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MH3-C8-6vF">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MH3-C8-6vF">
                                 <rect key="frame" x="0.0" y="270" width="375" height="397"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -395,7 +395,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJO-PC-Qep" userLabel="Top">
                                                             <rect key="frame" x="0.0" y="0.0" width="201" height="42"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The only way is Chiswick" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjP-u1-5El" userLabel="Quote">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The only way is Chiswick" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fjP-u1-5El" userLabel="Quote">
                                                                     <rect key="frame" x="0.0" y="10" width="201" height="22"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="hFI-jI-i46"/>
@@ -403,11 +403,17 @@
                                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <variation key="default">
+                                                                        <mask key="constraints">
+                                                                            <exclude reference="hFI-jI-i46"/>
+                                                                        </mask>
+                                                                    </variation>
                                                                 </label>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstItem="fjP-u1-5El" firstAttribute="leading" secondItem="sJO-PC-Qep" secondAttribute="leading" id="2Mk-aL-qHl"/>
+                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fjP-u1-5El" secondAttribute="trailing" id="GGk-p0-d9C"/>
                                                                 <constraint firstItem="fjP-u1-5El" firstAttribute="top" secondItem="sJO-PC-Qep" secondAttribute="top" constant="4" id="PXC-h8-J7S"/>
                                                                 <constraint firstItem="fjP-u1-5El" firstAttribute="centerY" secondItem="sJO-PC-Qep" secondAttribute="centerY" id="s6g-pM-hvz"/>
                                                             </constraints>
@@ -509,6 +515,7 @@
                                                     </constraints>
                                                     <state key="normal" image="mycastscreen-infoImage"/>
                                                     <connections>
+                                                        <action selector="changeText:" destination="NY1-yc-O4X" eventType="touchUpInside" id="97d-Nk-myl"/>
                                                         <action selector="infoButton:" destination="DL9-qX-upO" eventType="touchUpInside" id="lKm-pg-cI5"/>
                                                     </connections>
                                                 </button>
@@ -629,6 +636,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="rVe-r0-pD3"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="castCountLabel" destination="lIT-Mk-J7t" id="2YS-GI-JbI"/>
@@ -641,7 +649,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvj-15-JQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335.5" y="445.5"/>
+            <point key="canvasLocation" x="79.5" y="401.5"/>
         </scene>
     </scenes>
     <resources>

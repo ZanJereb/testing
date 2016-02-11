@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CastNavigationController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,35 +18,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qym-8U-Zfy">
-                                <rect key="frame" x="258" y="285" width="85" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="YDh-te-zQg"/>
-                                </constraints>
-                                <state key="normal" title="Shlapky">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="YDh-te-zQg"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="buttonMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9n-rM-AmO"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mycastscreen-background1" translatesAutoresizingMaskIntoConstraints="NO" id="1jf-o8-GyL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Qym-8U-Zfy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1e7-eq-XO2"/>
-                            <constraint firstItem="Qym-8U-Zfy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xv5-FI-4Yw"/>
+                            <constraint firstItem="1jf-o8-GyL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ec6-rJ-GZx"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="1jf-o8-GyL" secondAttribute="bottom" id="GEl-SU-IMI"/>
+                            <constraint firstItem="1jf-o8-GyL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="c1E-HD-Ghl"/>
+                            <constraint firstAttribute="trailing" secondItem="1jf-o8-GyL" secondAttribute="trailing" id="rtV-yE-g5m"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="AFa-gf-Ibt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="427"/>
+            <point key="canvasLocation" x="631" y="486"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7nH-83-wyo">
+            <objects>
+                <navigationController storyboardIdentifier="myCasts" id="8f7-ZY-EDJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tux-9T-z6X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qc8-Gm-3uY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bU-yM-YfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1309" y="493"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mycastscreen-background1" width="410" height="729"/>
+    </resources>
 </document>

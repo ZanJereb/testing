@@ -7,6 +7,7 @@
 //
 
 #import "MyCastTableViewCell.h"
+#import "Cast.h"
 
 @interface MyCastTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *tumbNailImageView;
@@ -23,5 +24,11 @@
     
 }
 
+- (void)setCast:(Cast *)cast
+{
+    _cast=cast;
+    self.currentLocationLabel.text = cast.location;
+    self.quoteLabel.text = cast.title;
+}
 
 @end

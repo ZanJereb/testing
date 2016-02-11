@@ -10,4 +10,9 @@
 
 @interface Cast : NSObject
 
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) NSString *location;
+
++ (void)fetchAllCasts:(void (^)(NSArray *casts))callBack;
+
 @end
