@@ -9,6 +9,22 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="92a-28-fx2">
+            <objects>
+                <navigationController id="b3I-hj-BsN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0XD-EG-Eoj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NY1-yc-O4X" kind="relationship" relationship="rootViewController" id="GxU-Vc-BWn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c87-g7-MxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="379"/>
+        </scene>
         <!--My Casts View Controller-->
         <scene sceneID="ibt-DK-TKU">
             <objects>
@@ -636,7 +652,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="rVe-r0-pD3"/>
+                    <navigationItem key="navigationItem" id="Wyh-zo-BZ2"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="castCountLabel" destination="lIT-Mk-J7t" id="2YS-GI-JbI"/>
@@ -649,7 +665,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvj-15-JQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79.5" y="401.5"/>
+            <point key="canvasLocation" x="602.5" y="412.5"/>
         </scene>
     </scenes>
     <resources>

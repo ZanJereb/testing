@@ -21,36 +21,38 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mycastscreen-background1" translatesAutoresizingMaskIntoConstraints="NO" id="1jf-o8-GyL">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GsP-oe-Vtt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="GsP-oe-Vtt" secondAttribute="trailing" id="32e-iy-f4t"/>
+                            <constraint firstAttribute="trailing" secondItem="GsP-oe-Vtt" secondAttribute="trailing" id="4va-qH-QKc"/>
                             <constraint firstItem="1jf-o8-GyL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ec6-rJ-GZx"/>
                             <constraint firstAttribute="bottomMargin" secondItem="1jf-o8-GyL" secondAttribute="bottom" id="GEl-SU-IMI"/>
+                            <constraint firstItem="GsP-oe-Vtt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HVd-bw-eqh"/>
+                            <constraint firstItem="GsP-oe-Vtt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Smc-Kn-VLX"/>
+                            <constraint firstItem="GsP-oe-Vtt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="W2F-uB-Ycm"/>
                             <constraint firstItem="1jf-o8-GyL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="c1E-HD-Ghl"/>
+                            <constraint firstItem="GsP-oe-Vtt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="r6t-gF-n5K"/>
                             <constraint firstAttribute="trailing" secondItem="1jf-o8-GyL" secondAttribute="trailing" id="rtV-yE-g5m"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="GsP-oe-Vtt" secondAttribute="bottom" id="xMN-g6-rKc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="32e-iy-f4t"/>
+                                <exclude reference="W2F-uB-Ycm"/>
+                                <exclude reference="r6t-gF-n5K"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="AFa-gf-Ibt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="631" y="486"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="7nH-83-wyo">
-            <objects>
-                <navigationController storyboardIdentifier="myCasts" id="8f7-ZY-EDJ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tux-9T-z6X">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qc8-Gm-3uY"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4bU-yM-YfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1309" y="493"/>
+            <point key="canvasLocation" x="703" y="384"/>
         </scene>
     </scenes>
     <resources>
