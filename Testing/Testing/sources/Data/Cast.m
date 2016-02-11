@@ -7,7 +7,7 @@
 //
 
 #import "Cast.h"
-
+#import "OUTAPIManager.h"
 @interface Cast ()
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *imageURL;
@@ -25,7 +25,35 @@
 
 + (void)fetchAllCasts:(void (^)(NSArray *casts))callBack
 {
-    callBack([self getAllCasts]);
+    [[OUTAPIManager sharedInstance] performRequest:[OUTAPIRequest forEndpoint:EndpointPathMyCasts ofType:APICallGet] withCallback:^(id responseObject, NSError *error, NSNumber *statusCode) {
+        
+        NSMutableArray *casts = [[NSMutableArray alloc] init];
+        for(NSDictionary *item in responseObject[@"items"])
+        {
+            [casts addObject:[[Cast alloc] initWithDescriptor:item]];
+        }
+        
+        callBack(casts);
+    }];
+}
+
+- (instancetype)initWithDescriptor:(NSDictionary *)descriptor
+{
+    if((self = [super init]))
+    {
+        self.title = descriptor[@"title"];
+        self.imageURL = descriptor[@"movieThumbnailURL"];
+        self.location = descriptor[@"city"];
+        self.dateCreated = [[self apiDateFormatter] dateFromString:descriptor[@"created"]];
+    }
+    return self;
+}
+
+- (NSDateFormatter *)apiDateFormatter
+{
+    NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZZZ"; // created = "2016-01-12T13:58:33+0000";
+    return formatter;
 }
 
 + (NSArray *)getAllCasts

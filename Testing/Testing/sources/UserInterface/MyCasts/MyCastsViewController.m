@@ -9,6 +9,8 @@
 #import "MyCastsViewController.h"
 #import "MyCastTableViewCell.h"
 #import "Cast.h"
+#import "User.h"
+
 
 @interface MyCastsViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -35,6 +37,11 @@
     [Cast fetchAllCasts:^(NSArray *casts) {
         [self injectCasts:casts];
     }];
+    
+    self.profileNameLabel.text = self.user.profileName;
+    self.locationNameLabel.text = self.user.location;
+    self.castCountLabel.text = [NSString stringWithFormat:@"%d casts", (int)self.user.numberOfCasts];
+    self.channelCountLabel.text = [NSString stringWithFormat:@"%d channels", (int)self.user.numberOfChannels];
     
 }
 

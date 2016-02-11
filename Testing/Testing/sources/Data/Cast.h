@@ -14,5 +14,6 @@
 @property (nonatomic, readonly) NSString *location;
 
 + (void)fetchAllCasts:(void (^)(NSArray *casts))callBack;
+- (instancetype)initWithDescriptor:(NSDictionary *)descriptor;
 
 @end
