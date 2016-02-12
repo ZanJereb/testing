@@ -6,13 +6,18 @@
 //  Copyright © 2016 Zan. All rights reserved.
 //
 
+#import "DLBSegmentedVideoConverter.h"
 #import "AddCastViewController.h"
+#import "ProgresOverLay.h"
 @import MediaPlayer;
 @import MobileCoreServices;
 
-@interface AddCastViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@interface AddCastViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, DLBSegmentedVideoConverterDelegate>
 @property (nonatomic, strong) NSURL *videoPath;
 @property (nonatomic, strong) MPMoviePlayerController *player;
+@property (nonatomic, strong) DLBSegmentedVideoConverter *converter;
+@property (nonatomic, strong) ProgresOverLay *overlay;
 
 
 @end
@@ -48,7 +53,19 @@
 {
     self.videoPath = [info objectForKey:@"UIImagePickerControllerMediaURL"];
     [picker dismissViewControllerAnimated:YES completion:nil];
+    
+    [self showOverlay];
+    
+    self.converter = [[DLBSegmentedVideoConverter alloc] init];
+    self.converter.inputURLs = @[self.videoPath];
+    self.converter.outputURL = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingPathComponent:@"video.mp4"]];
+    self.converter.delegate = self;
+    [self.converter resampleVideo];
+}
 
+- (void)segmentedVideoConverter:(DLBSegmentedVideoConverter *)sender finishedConversionTo:(NSURL *)outputPath
+{
+    [self hideOverlay];
 }
 
 - (IBAction)previewVideo:(id)sender
@@ -59,4 +76,17 @@
     [self presentViewController:controler animated:YES completion:nil];
 }
 
+- (void)showOverlay
+{
+    if(self.overlay == nil)
+    {
+        self.overlay = [ProgresOverLay presentOnView:self.view];
+    }
+}
+
+- (void)hideOverlay
+{
+    [self.overlay dismiss];
+    self.overlay = nil;
+}
 @end

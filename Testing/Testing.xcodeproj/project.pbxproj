@@ -17,6 +17,7 @@
 		2196D58A1C6CA7A000130095 /* DLBDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2196D5891C6CA7A000130095 /* DLBDictionary.m */; };
 		2D47AF0F1C6C9C4100C58D21 /* MyCastNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AF0E1C6C9C4100C58D21 /* MyCastNavigationViewController.m */; };
 		2D5E24641C6DC7A400536532 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E24631C6DC7A400536532 /* MediaPlayer.framework */; };
+		2D5E24681C6E0F3700536532 /* ProgresOverLay.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E24671C6E0F3700536532 /* ProgresOverLay.m */; };
 		2D75A6F91C6B7AA9009665DF /* my casts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D75A6F41C6B7AA9009665DF /* my casts.storyboard */; };
 		2D75A6FA1C6B7AA9009665DF /* MyCastsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D75A6F61C6B7AA9009665DF /* MyCastsViewController.m */; };
 		2D75A6FB1C6B7AA9009665DF /* MyCastTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D75A6F81C6B7AA9009665DF /* MyCastTableViewCell.m */; };
@@ -53,6 +54,8 @@
 		2D47AF0D1C6C9C4100C58D21 /* MyCastNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCastNavigationViewController.h; sourceTree = "<group>"; };
 		2D47AF0E1C6C9C4100C58D21 /* MyCastNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCastNavigationViewController.m; sourceTree = "<group>"; };
 		2D5E24631C6DC7A400536532 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2D5E24661C6E0F3700536532 /* ProgresOverLay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgresOverLay.h; sourceTree = "<group>"; };
+		2D5E24671C6E0F3700536532 /* ProgresOverLay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgresOverLay.m; sourceTree = "<group>"; };
 		2D75A6F41C6B7AA9009665DF /* my casts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "my casts.storyboard"; sourceTree = "<group>"; };
 		2D75A6F51C6B7AA9009665DF /* MyCastsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCastsViewController.h; sourceTree = "<group>"; };
 		2D75A6F61C6B7AA9009665DF /* MyCastsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCastsViewController.m; sourceTree = "<group>"; };
@@ -158,9 +161,19 @@
 			path = DLB;
 			sourceTree = "<group>";
 		};
+		2D5E24651C6E0F1200536532 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E24661C6E0F3700536532 /* ProgresOverLay.h */,
+				2D5E24671C6E0F3700536532 /* ProgresOverLay.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		2D75A6F21C6B7AA9009665DF /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				2D5E24651C6E0F1200536532 /* Tools */,
 				2D75A6F31C6B7AA9009665DF /* MyCasts */,
 			);
 			path = UserInterface;
@@ -389,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5E24681C6E0F3700536532 /* ProgresOverLay.m in Sources */,
 				2D9A51D11C6CB3BD002FBA2C /* User.m in Sources */,
 				2D8AEEC21C6A0E7C00424D4F /* ViewController.m in Sources */,
 				210C159E1C6DFD19006CEDA4 /* DLBSegmentedVideoConverterInput.m in Sources */,
