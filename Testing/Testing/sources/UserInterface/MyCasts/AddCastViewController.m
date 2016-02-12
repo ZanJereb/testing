@@ -9,6 +9,7 @@
 #import "DLBSegmentedVideoConverter.h"
 #import "AddCastViewController.h"
 #import "ProgresOverLay.h"
+#import "OUTAWSHandler.h"
 @import MediaPlayer;
 @import MobileCoreServices;
 
@@ -18,6 +19,7 @@
 @property (nonatomic, strong) MPMoviePlayerController *player;
 @property (nonatomic, strong) DLBSegmentedVideoConverter *converter;
 @property (nonatomic, strong) ProgresOverLay *overlay;
+@property (nonatomic, strong) NSString *uniqueId;
 
 
 @end
@@ -65,7 +67,14 @@
 
 - (void)segmentedVideoConverter:(DLBSegmentedVideoConverter *)sender finishedConversionTo:(NSURL *)outputPath
 {
-    [self hideOverlay];
+    
+    self.uniqueId= [[NSUUID UUID] UUIDString];
+    [[OUTAWSHandler sharedInstance] uploadVideo:outputPath.path withUUID:self.uniqueId name:@"video.mp4" progressCallback:^(CGFloat progress, BOOL finished, NSError *error, BOOL *cancel) {
+        if(finished)
+        {
+            [self hideOverlay];
+        }
+    }];
 }
 
 - (IBAction)previewVideo:(id)sender
