@@ -47,6 +47,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
     self.videoPath = [info objectForKey:@"UIImagePickerControllerMediaURL"];
+    [picker dismissViewControllerAnimated:YES completion:nil];
 
 }
 
