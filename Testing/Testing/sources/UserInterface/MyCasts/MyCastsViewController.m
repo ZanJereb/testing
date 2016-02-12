@@ -123,13 +123,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-        NSURL *videoURL = [NSURL URLWithString:@"http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8"];
+    if (indexPath.row == 0)
+    {
+        // do nothing
+    }
+    else
+    {
+        Cast *cast = self.items[indexPath.row-1];
+        NSURL *videoURL = [NSURL URLWithString:cast.videoURL];
+        
+        MPMoviePlayerViewController * controler = [[MPMoviePlayerViewController alloc] initWithContentURL:videoURL];
+        
+        [self presentViewController:controler animated:YES completion:nil];
+        
+    }
     
-        self.player = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
     
-       [self.view addSubview:self.player.view];
-       self.player.fullscreen = YES;
-       [self.player play];
 }
 
 @end

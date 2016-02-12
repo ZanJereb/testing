@@ -62,7 +62,7 @@
         self.imageURL = descriptor[@"movieThumbnailURL"];
         self.location = descriptor[@"city"];
         self.dateCreated = [[self apiDateFormatter] dateFromString:descriptor[@"created"]];
-        self.videoURL = descriptor[@""];
+        self.videoURL = descriptor[@"original_url"];
     }
     return self;
 }

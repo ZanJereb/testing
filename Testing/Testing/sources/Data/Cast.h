@@ -15,6 +15,7 @@
 @property (nonatomic, readonly) NSString *location;
 @property (nonatomic, readonly) NSString *timeStamp;
 @property (nonatomic, readonly) NSString *imageURL;
+@property (nonatomic, readonly) NSString *videoURL;
 
 + (void)fetchAllCasts:(void (^)(NSArray *casts))callBack;
 - (void)fetchThumbnail:(void (^)(UIImage *image))callBack;
