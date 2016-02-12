@@ -10,6 +10,7 @@
 #import "MyCastTableViewCell.h"
 #import "Cast.h"
 #import "User.h"
+@import MediaPlayer;
 
 
 @interface MyCastsViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -21,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *locationNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *castCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *channelCountLabel;
+@property (nonatomic, strong) MPMoviePlayerController *player;
 
 
 
@@ -117,6 +119,17 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return indexPath.row == 0 ? 50.0f : 76.0f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+        NSURL *videoURL = [NSURL URLWithString:@"http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8"];
+    
+        self.player = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
+    
+       [self.view addSubview:self.player.view];
+       self.player.fullscreen = YES;
+       [self.player play];
 }
 
 @end

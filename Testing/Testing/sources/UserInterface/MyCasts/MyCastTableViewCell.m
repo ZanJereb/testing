@@ -11,10 +11,13 @@
 #import "ImageTools.h"
 
 @interface MyCastTableViewCell ()
+
 @property (weak, nonatomic) IBOutlet UIImageView *tumbNailImageView;
 @property (weak, nonatomic) IBOutlet UILabel *quoteLabel;
 @property (weak, nonatomic) IBOutlet UILabel *currentLocationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *postTimeLabel;
+
+
 
 @end
 

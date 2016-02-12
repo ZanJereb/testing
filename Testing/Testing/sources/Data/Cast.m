@@ -9,11 +9,13 @@
 #import "Cast.h"
 #import "OUTAPIManager.h"
 #import "ImageTools.h"
+
 @interface Cast ()
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *imageURL;
 @property (nonatomic, strong) NSString *location;
 @property (nonatomic, strong) NSDate *dateCreated;
+@property (nonatomic, strong) NSString *videoURL;
 
 @property (nonatomic, strong) UIImage *image;
 
@@ -35,6 +37,7 @@
         callBack(casts);
     }];
 }
+
 
 - (void)fetchThumbnail:(void (^)(UIImage *image))callBack
 {
@@ -59,6 +62,7 @@
         self.imageURL = descriptor[@"movieThumbnailURL"];
         self.location = descriptor[@"city"];
         self.dateCreated = [[self apiDateFormatter] dateFromString:descriptor[@"created"]];
+        self.videoURL = descriptor[@""];
     }
     return self;
 }
