@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210C159C1C6DFD19006CEDA4 /* DLBSegmentedVideoConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 210C15971C6DFD19006CEDA4 /* DLBSegmentedVideoConverter.m */; };
+		210C159D1C6DFD19006CEDA4 /* DLBSegmentedVideoConverterAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 210C15991C6DFD19006CEDA4 /* DLBSegmentedVideoConverterAsset.m */; };
+		210C159E1C6DFD19006CEDA4 /* DLBSegmentedVideoConverterInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 210C159B1C6DFD19006CEDA4 /* DLBSegmentedVideoConverterInput.m */; };
+		210C15A21C6DFE7C006CEDA4 /* OUTAWSHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 210C15A11C6DFE7C006CEDA4 /* OUTAWSHandler.m */; };
 		2196D5831C6CA6E100130095 /* OUTAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2196D57E1C6CA6E100130095 /* OUTAPIManager.m */; };
 		2196D5841C6CA6E100130095 /* OUTAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2196D5801C6CA6E100130095 /* OUTAPIRequest.m */; };
 		2196D5851C6CA6E100130095 /* OUTSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2196D5821C6CA6E100130095 /* OUTSessionManager.m */; };
@@ -30,6 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		210C15961C6DFD19006CEDA4 /* DLBSegmentedVideoConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBSegmentedVideoConverter.h; sourceTree = "<group>"; };
+		210C15971C6DFD19006CEDA4 /* DLBSegmentedVideoConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLBSegmentedVideoConverter.m; sourceTree = "<group>"; };
+		210C15981C6DFD19006CEDA4 /* DLBSegmentedVideoConverterAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBSegmentedVideoConverterAsset.h; sourceTree = "<group>"; };
+		210C15991C6DFD19006CEDA4 /* DLBSegmentedVideoConverterAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLBSegmentedVideoConverterAsset.m; sourceTree = "<group>"; };
+		210C159A1C6DFD19006CEDA4 /* DLBSegmentedVideoConverterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBSegmentedVideoConverterInput.h; sourceTree = "<group>"; };
+		210C159B1C6DFD19006CEDA4 /* DLBSegmentedVideoConverterInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLBSegmentedVideoConverterInput.m; sourceTree = "<group>"; };
+		210C15A01C6DFE7C006CEDA4 /* OUTAWSHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OUTAWSHandler.h; sourceTree = "<group>"; };
+		210C15A11C6DFE7C006CEDA4 /* OUTAWSHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OUTAWSHandler.m; sourceTree = "<group>"; };
 		2196D57D1C6CA6E100130095 /* OUTAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OUTAPIManager.h; sourceTree = "<group>"; };
 		2196D57E1C6CA6E100130095 /* OUTAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OUTAPIManager.m; sourceTree = "<group>"; };
 		2196D57F1C6CA6E100130095 /* OUTAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OUTAPIRequest.h; sourceTree = "<group>"; };
@@ -82,6 +94,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		210C15951C6DFD19006CEDA4 /* Segmented video converter */ = {
+			isa = PBXGroup;
+			children = (
+				210C15961C6DFD19006CEDA4 /* DLBSegmentedVideoConverter.h */,
+				210C15971C6DFD19006CEDA4 /* DLBSegmentedVideoConverter.m */,
+				210C15981C6DFD19006CEDA4 /* DLBSegmentedVideoConverterAsset.h */,
+				210C15991C6DFD19006CEDA4 /* DLBSegmentedVideoConverterAsset.m */,
+				210C159A1C6DFD19006CEDA4 /* DLBSegmentedVideoConverterInput.h */,
+				210C159B1C6DFD19006CEDA4 /* DLBSegmentedVideoConverterInput.m */,
+			);
+			path = "Segmented video converter";
+			sourceTree = "<group>";
+		};
+		210C159F1C6DFE7C006CEDA4 /* AWS */ = {
+			isa = PBXGroup;
+			children = (
+				210C15A01C6DFE7C006CEDA4 /* OUTAWSHandler.h */,
+				210C15A11C6DFE7C006CEDA4 /* OUTAWSHandler.m */,
+			);
+			path = AWS;
+			sourceTree = "<group>";
+		};
 		2196D57B1C6CA6E100130095 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +140,7 @@
 		2196D5861C6CA7A000130095 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				210C159F1C6DFE7C006CEDA4 /* AWS */,
 				2196D5871C6CA7A000130095 /* DLB */,
 				2DCE81701C6CDA1C005E35F9 /* ImageTools.h */,
 				2DCE81711C6CDA1C005E35F9 /* ImageTools.m */,
@@ -116,6 +151,7 @@
 		2196D5871C6CA7A000130095 /* DLB */ = {
 			isa = PBXGroup;
 			children = (
+				210C15951C6DFD19006CEDA4 /* Segmented video converter */,
 				2196D5881C6CA7A000130095 /* DLBDictionary.h */,
 				2196D5891C6CA7A000130095 /* DLBDictionary.m */,
 			);
@@ -355,16 +391,20 @@
 			files = (
 				2D9A51D11C6CB3BD002FBA2C /* User.m in Sources */,
 				2D8AEEC21C6A0E7C00424D4F /* ViewController.m in Sources */,
+				210C159E1C6DFD19006CEDA4 /* DLBSegmentedVideoConverterInput.m in Sources */,
 				2D75A6FA1C6B7AA9009665DF /* MyCastsViewController.m in Sources */,
 				2D75A6FF1C6B7AEC009665DF /* Cast.m in Sources */,
+				210C159C1C6DFD19006CEDA4 /* DLBSegmentedVideoConverter.m in Sources */,
 				2D75A6FB1C6B7AA9009665DF /* MyCastTableViewCell.m in Sources */,
 				2D8AEEC11C6A0E7C00424D4F /* AppDelegate.m in Sources */,
 				2D9A51CE1C6CB174002FBA2C /* AddCastViewController.m in Sources */,
 				2DCE81721C6CDA1C005E35F9 /* ImageTools.m in Sources */,
 				2196D5851C6CA6E100130095 /* OUTSessionManager.m in Sources */,
 				2D47AF0F1C6C9C4100C58D21 /* MyCastNavigationViewController.m in Sources */,
+				210C159D1C6DFD19006CEDA4 /* DLBSegmentedVideoConverterAsset.m in Sources */,
 				2196D5841C6CA6E100130095 /* OUTAPIRequest.m in Sources */,
 				2D8AEEA51C6A092300424D4F /* main.m in Sources */,
+				210C15A21C6DFE7C006CEDA4 /* OUTAWSHandler.m in Sources */,
 				2196D58A1C6CA7A000130095 /* DLBDictionary.m in Sources */,
 				2196D5831C6CA6E100130095 /* OUTAPIManager.m in Sources */,
 			);
