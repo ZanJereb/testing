@@ -37,12 +37,42 @@
                     <view key="view" contentMode="scaleToFill" id="P8X-fp-vdQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohv-Dt-gDK">
+                                <rect key="frame" x="100" y="520" width="104" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Start recording"/>
+                                <connections>
+                                    <action selector="startRecording:" destination="9qC-Vs-WCV" eventType="touchUpInside" id="0P7-iy-szN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNE-za-g4I">
+                                <rect key="frame" x="446" y="520" width="54" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Preview"/>
+                                <connections>
+                                    <action selector="previewVideo:" destination="9qC-Vs-WCV" eventType="touchUpInside" id="ePQ-um-eQi"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="Ohv-Dt-gDK" secondAttribute="bottom" constant="50" id="AfY-iJ-SOd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="UNE-za-g4I" secondAttribute="bottom" constant="50" id="oMA-XN-wzH"/>
+                            <constraint firstAttribute="trailing" secondItem="UNE-za-g4I" secondAttribute="trailing" constant="100" id="tqb-KK-gR3"/>
+                            <constraint firstItem="Ohv-Dt-gDK" firstAttribute="leading" secondItem="P8X-fp-vdQ" secondAttribute="leading" constant="100" id="uFn-o8-8E9"/>
+                            <constraint firstItem="UNE-za-g4I" firstAttribute="leading" secondItem="Ohv-Dt-gDK" secondAttribute="trailing" constant="80" id="ylO-G0-kLh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ylO-G0-kLh"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGe-WU-Hga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1109" y="379"/>
+            <point key="canvasLocation" x="1141" y="355"/>
         </scene>
         <!--My Casts View Controller-->
         <scene sceneID="ibt-DK-TKU">
@@ -94,7 +124,7 @@
                                             <constraint firstAttribute="height" constant="50" id="dFu-Rt-3lx"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="xI8-ox-sgv"/>
                                         </constraints>
-                                        <state key="normal" title="Add" image="D8B8D99E-1D07-427A-A974-8443C2D606E1"/>
+                                        <state key="normal" title="Add" image="5D93E950-14E1-48DF-AF5D-C2DFB53D261D"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="dFu-Rt-3lx"/>
@@ -689,7 +719,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="D8B8D99E-1D07-427A-A974-8443C2D606E1" width="33" height="33">
+        <image name="5D93E950-14E1-48DF-AF5D-C2DFB53D261D" width="33" height="33">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
