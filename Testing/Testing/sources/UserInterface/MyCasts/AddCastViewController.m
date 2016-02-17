@@ -10,16 +10,24 @@
 #import "AddCastViewController.h"
 #import "ProgresOverLay.h"
 #import "OUTAWSHandler.h"
+#import "OUTAPIRequest.h"
+#import "DLBDictionary.h"
 @import MediaPlayer;
 @import MobileCoreServices;
 
 
-@interface AddCastViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, DLBSegmentedVideoConverterDelegate>
+
+
+@interface AddCastViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, DLBSegmentedVideoConverterDelegate, OUTAPIRequestDelegate>
 @property (nonatomic, strong) NSURL *videoPath;
 @property (nonatomic, strong) MPMoviePlayerController *player;
 @property (nonatomic, strong) DLBSegmentedVideoConverter *converter;
 @property (nonatomic, strong) ProgresOverLay *overlay;
 @property (nonatomic, strong) NSString *uniqueId;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *country;
+@property (nonatomic, strong) NSString *city;
+
 
 
 @end
@@ -98,4 +106,15 @@
     [self.overlay dismiss];
     self.overlay = nil;
 }
+
+- (instancetype)setParameters:(DLBDictionary *)parameters
+{
+    parameters[@"title"] = @"Elmo";
+    parameters[@"country"] = @"Slovenija";
+    parameters[@"city"] = @"Ljubljana";
+    parameters[@"media_id"] = self.uniqueId;
+    
+    return self;
+}
+
 @end

@@ -124,7 +124,7 @@
                                             <constraint firstAttribute="height" constant="50" id="dFu-Rt-3lx"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="xI8-ox-sgv"/>
                                         </constraints>
-                                        <state key="normal" title="Add" image="5D93E950-14E1-48DF-AF5D-C2DFB53D261D"/>
+                                        <state key="normal" title="Add" image="193022D7-7CE2-4358-A5CC-12F995134CFD"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="dFu-Rt-3lx"/>
@@ -719,7 +719,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="5D93E950-14E1-48DF-AF5D-C2DFB53D261D" width="33" height="33">
+        <image name="193022D7-7CE2-4358-A5CC-12F995134CFD" width="33" height="33">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
